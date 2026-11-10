@@ -69,6 +69,9 @@ namespace Filmek
             MessageBox.Show($"Filmek átlagos értékelése: {filmek.Average(f => f.Hossz)}");
         }
 
-
+        private void Csakscifi(object sender, RoutedEventArgs e)
+        {
+            datagrid.ItemsSource = filmek.Where(f => f.Mufaj.ToLower()== "sci-fi").ToList();
+        }
     }
 }

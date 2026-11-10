@@ -16,7 +16,7 @@
             <Button Width="250" Height="30" Margin="10" Content="Hány film van?" Click="osszfilm" />
             <Button Width="250" Height="30" Margin="10" Content="Leghosszabb film?" Click="Leghosszabb"/>
             <Button Width="250" Height="30" Margin="10" Content="Átlag értékelés" Click="Atlag"/>
-            <Button Width="250" Height="30" Margin="10" Content="Csak sci-fi" />
+            <Button Width="250" Height="30" Margin="10" Content="Csak sci-fi" Click="Csakscifi"/>
             <Button Width="250" Height="30" Margin="10" Content="Csak címek"/>
             <Button Width="250" Height="30" Margin="10" Content="Rendezés cím szerint"/>
         </StackPanel>
