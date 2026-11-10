@@ -73,5 +73,10 @@ namespace Filmek
         {
             datagrid.ItemsSource = filmek.Where(f => f.Mufaj.ToLower()== "sci-fi").ToList();
         }
+
+        private void Csakcim(object sender, RoutedEventArgs e)
+        {
+            datagrid.ItemsSource = filmek.Select(f => new {Cim = f.Cim}).ToList();
+        }
     }
 }
