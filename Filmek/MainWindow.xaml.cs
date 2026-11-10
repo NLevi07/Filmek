@@ -57,6 +57,14 @@ namespace Filmek
             MessageBox.Show($"Összesen {filmek.Count()}film van");
         }
 
+        private void Leghosszabb(object sender, RoutedEventArgs e)
+        {
+            var leghoszabb = filmek.OrderByDescending(f => f.Hossz).Take(1);
+            datagrid.ItemsSource = leghoszabb;
+
+        }
+
+
 
 
     }
