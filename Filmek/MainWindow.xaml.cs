@@ -64,7 +64,10 @@ namespace Filmek
 
         }
 
-
+        private void Atlag(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Filmek átlagos értékelése: {filmek.Average(f => f.Hossz)}");
+        }
 
 
     }
