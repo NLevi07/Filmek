@@ -52,5 +52,9 @@ namespace Filmek
             datagrid.Items.Refresh();
         }
 
+        private void osszfilm(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Összesen {filmek.Count()}film van");
+        }
     }
 }
