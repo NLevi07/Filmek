@@ -19,8 +19,10 @@
             <Button Width="250" Height="30" Margin="10" Content="Csak sci-fi" Click="Csakscifi"/>
             <Button Width="250" Height="30" Margin="10" Content="Csak címek" Click="Csakcim"/>
             <Button Width="250" Height="30" Margin="10" Content="Rendezés cím szerint" Click="Cimszerintrendezes"/>
+            <ProgressBar x:Name="progressbar" Width="250" Height="20" Margin="15" />
         </StackPanel>
-        <DataGrid x:Name="datagrid" Grid.Column="1" Margin="5"/>
-        
+        <StackPanel Grid.Column="1">
+            <DataGrid x:Name="datagrid"  Margin="5" MaxHeight="200" SelectionChanged="selectchange"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -72,6 +72,7 @@ namespace Filmek
         private void Csakscifi(object sender, RoutedEventArgs e)
         {
             datagrid.ItemsSource = filmek.Where(f => f.Mufaj.ToLower()== "sci-fi").ToList();
+            
         }
 
         private void Csakcim(object sender, RoutedEventArgs e)
@@ -82,6 +83,16 @@ namespace Filmek
         private void Cimszerintrendezes(object sender, RoutedEventArgs e)
         {
             datagrid.ItemsSource = filmek.OrderBy(f => f.Cim);
+        }
+        private void selectchange(object sender, SelectionChangedEventArgs e)
+        {
+            progressbar.Maximum = filmek.Max(f => f.Hossz);
+            progressbar.Minimum = 0;
+            Film selected = ((Film)datagrid.SelectedItem);
+            if (selected != null)
+            {
+                progressbar.Value = selected.Hossz;
+            }
         }
     }
 }
