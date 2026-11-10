@@ -18,7 +18,7 @@
             <Button Width="250" Height="30" Margin="10" Content="Átlag értékelés" Click="Atlag"/>
             <Button Width="250" Height="30" Margin="10" Content="Csak sci-fi" Click="Csakscifi"/>
             <Button Width="250" Height="30" Margin="10" Content="Csak címek" Click="Csakcim"/>
-            <Button Width="250" Height="30" Margin="10" Content="Rendezés cím szerint"/>
+            <Button Width="250" Height="30" Margin="10" Content="Rendezés cím szerint" Click="Cimszerintrendezes"/>
         </StackPanel>
         <DataGrid x:Name="datagrid" Grid.Column="1" Margin="5"/>
         

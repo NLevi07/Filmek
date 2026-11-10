@@ -76,7 +76,12 @@ namespace Filmek
 
         private void Csakcim(object sender, RoutedEventArgs e)
         {
-            datagrid.ItemsSource = filmek.Select(f => new {Cim = f.Cim}).ToList();
+            datagrid.ItemsSource = filmek.Select(f => new {Cim = f.Cim});
+        }
+
+        private void Cimszerintrendezes(object sender, RoutedEventArgs e)
+        {
+            datagrid.ItemsSource = filmek.OrderBy(f => f.Cim);
         }
     }
 }
