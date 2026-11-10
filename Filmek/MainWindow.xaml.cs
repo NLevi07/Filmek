@@ -66,7 +66,10 @@ namespace Filmek
 
         private void Atlag(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show($"Filmek átlagos értékelése: {filmek.Average(f => f.Hossz)}");
+            if (filmek.Count > 0)
+            {
+                MessageBox.Show($"Filmek átlagos értékelése: {filmek.Average(f => f.Ertekeles)}");
+            }
         }
 
         private void Csakscifi(object sender, RoutedEventArgs e)
