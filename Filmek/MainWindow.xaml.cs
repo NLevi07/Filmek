@@ -56,5 +56,8 @@ namespace Filmek
         {
             MessageBox.Show($"Összesen {filmek.Count()}film van");
         }
+
+
+
     }
 }
